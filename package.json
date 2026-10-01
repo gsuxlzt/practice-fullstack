@@ -1,5 +1,5 @@
 {
-  "name": "test-docker",
+  "name": "practice-fullstack",
   "packageManager": "yarn@4.18.0",
   "scripts": {
     "build": "tsc",
