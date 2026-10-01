@@ -1,0 +1,8 @@
+FROM node:24-alpine
+RUN corepack enable
+WORKDIR /app
+COPY package.json yarn.lock .yarnrc.yml ./
+RUN yarn install --immutable
+COPY . .
+RUN yarn build
+CMD ["yarn", "dev"]
